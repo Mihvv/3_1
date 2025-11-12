@@ -30,8 +30,7 @@ async function fetchCountry() {
       <td>${country.capital?.join(", ") ?? "-"}</td>
       <td>${country.population?.toLocaleString("pl-PL") ?? "-"}</td>
       <td>${country.region ?? "-"}</td>
-      <td>${country.subregion ?? "-"}</td>
-    `;
+      <td>${country.subregion ?? "-"}</td>`;
     tableBody.appendChild(row);
     table.classList.remove("hidden");
   } catch (error) {

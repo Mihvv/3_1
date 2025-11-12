@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Wyszukaj kraj po stolicy</h1>
+      <div class="search-box">
+        <input
+          type="text"
+          id="capitalInput"
+          placeholder="Wpisz nazwę stolicy (np. Warsaw)"
+        />
+        <button id="searchBtn">Szukaj</button>
+      </div>
+
+      <table id="resultTable" class="hidden">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Capital</th>
+            <th>Population</th>
+            <th>Region</th>
+            <th>Subregion</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+
+      <p id="message"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
